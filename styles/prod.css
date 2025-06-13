@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #003366;
+    height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+/* teste */
+
+.teste{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.box-1{
+    grid-column: 1/2;
+}
+
+.box-2{
+    grid-column:3/5;
+}
+
+.logo_content{
+    text-align: center;
+}
+
+.logo_content > img{
+    width: 20%;
+}
+
+
+.list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+li > a{ /*a*/
+    color: white;
+    text-decoration: none;
+    flex: 1 1 0;
+}
+
