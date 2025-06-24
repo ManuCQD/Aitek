@@ -1,0 +1,221 @@
+/* Reset */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+  box-sizing: border-box; /* Inclui borda e padding no cálculo de tamanho total */
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Inter', sans-serif; /* Define a fonte padrão */
+  color: #1a1a1a; /* Cor padrão do texto */
+  background-color: #fefefe; /* Fundo branco suave */
+  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+  scroll-behavior: smooth; /* Rolar suavemente ao clicar em âncoras */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #fff; /* Fundo branco no cabeçalho */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra leve */
+  position: sticky; /* Cabeçalho fixo no topo da tela */
+  top: 0; /* Alinha no topo da janela */
+  z-index: 999; /* Garante que fique acima de outros elementos */
+}
+
+.nav-container {
+  display: flex; /* Layout flexível em linha */
+  justify-content: space-between; /* Espaço entre itens extremos */
+  align-items: center; /* Alinhamento vertical central */
+  padding: 1.5rem 2rem; /* Espaçamento interno do container */
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.logo {
+  font-size: 1.8rem; /* Tamanho da fonte do logo */
+  font-weight: bold; /* Negrito */
+  color: #003366; /* Cor azul escura */
+}
+
+.navbar ul {
+  list-style: none; /* Remove os marcadores de lista */
+  display: flex; /* Layout em linha */
+  gap: 2rem; /* Espaçamento entre os itens */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #003366; /* Cor azul escuro */
+  font-weight: 500; /* Peso médio da fonte */
+  transition: 0.3s; /* Transição suave para hover */
+}
+
+.navbar a:hover {
+  color: #007BFF; /* Cor azul clara ao passar o mouse */
+}
+
+/* Introdução */
+.section.intro {
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 4rem 2rem 2rem; /* Espaçamento interno (topo, laterais e baixo) */
+  max-width: 900px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.section.intro h2 {
+  font-size: 2.2rem; /* Tamanho do título */
+  color: #003366; /* Cor azul escuro */
+  margin-bottom: 1rem; /* Espaço inferior */
+}
+
+.section.intro p {
+  font-size: 1.1rem; /* Tamanho do parágrafo */
+  color: #444; /* Cinza escuro */
+}
+
+/* Seções das empresas */
+.empresa-section {
+  padding: 3rem 2rem; /* Espaçamento interno */
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Layout horizontal com imagem + texto */
+.empresa-section.horizontal {
+  display: flex; /* Layout flexível em linha */
+  flex-wrap: wrap; /* Permite quebra de linha */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 2rem; /* Espaçamento entre elementos */
+  margin-bottom: 2rem; /* Espaço abaixo da seção */
+}
+
+.empresa-section.img-right .empresa-text {
+  order: 1; /* Aparece primeiro */
+  flex: 1 1 60%; /* Ocupa 60% da largura */
+}
+
+.empresa-section.img-right .empresa-img-wrapper {
+  order: 2; /* Aparece depois */
+  flex: 1 1 35%; /* Ocupa 35% da largura */
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.empresa-section.img-left .empresa-text {
+  order: 2; /* Aparece depois */
+  flex: 1 1 60%; /* Ocupa 60% da largura */
+}
+
+.empresa-section.img-left .empresa-img-wrapper {
+  order: 1; /* Aparece primeiro */
+  flex: 1 1 35%; /* Ocupa 35% da largura */
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Texto da empresa */
+.empresa-text h2 {
+  font-size: 1.8rem; /* Tamanho do título */
+  color: #003366; /* Azul escuro */
+  margin-bottom: 0.75rem; /* Espaço inferior */
+}
+
+.empresa-text p {
+  font-size: 1.05rem; /* Tamanho da fonte */
+  color: #333; /* Cinza escuro */
+  line-height: 1.7; /* Espaçamento entre linhas */
+}
+
+/* Imagens das empresas */
+.empresa-img {
+  max-width: 100%; /* Não ultrapassa o container */
+  width: 320px; /* Largura fixa */
+  height: auto; /* Altura proporcional */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Sombra suave */
+  transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.empresa-img:hover {
+  transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+  background: #003366; /* Fundo azul escuro */
+  color: white; /* Texto branco */
+  padding: 2rem; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+footer .footer-info p {
+  margin-bottom: 0.5rem; /* Espaço inferior entre os parágrafos */
+  font-size: 0.95rem; /* Tamanho da fonte */
+}
+
+footer .social a {
+  margin: 0 0.75rem; /* Espaço lateral entre ícones */
+  color: white; /* Cor branca */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: 500; /* Peso da fonte médio */
+  transition: 0.3s; /* Transição suave para hover */
+}
+
+footer .social a:hover {
+  text-decoration: underline; /* Adiciona sublinhado no hover */
+  color: #00aaff; /* Altera cor ao passar o mouse */
+}
+
+/* WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed; /* Fixa na tela */
+  bottom: 20px; /* Distância da parte inferior */
+  right: 20px; /* Distância da direita */
+  background: #25D366; /* Cor verde do WhatsApp */
+  color: white; /* Cor do ícone */
+  border-radius: 50%; /* Formato circular */
+  width: 56px; /* Largura do botão */
+  height: 56px; /* Altura do botão */
+  display: flex; /* Layout flexível */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  font-size: 24px; /* Tamanho do ícone */
+  text-decoration: none; /* Remove sublinhado */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Sombra forte */
+  z-index: 1000; /* Fica acima de todos os elementos */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column; /* Itens um abaixo do outro */
+    align-items: flex-start; /* Alinha à esquerda */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Menu vertical */
+    gap: 1rem; /* Espaço entre itens */
+    margin-top: 1rem; /* Espaço acima */
+  }
+
+  .empresa-section.horizontal {
+    flex-direction: column; /* Alinha em coluna no mobile */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .empresa-text,
+  .empresa-img-wrapper {
+    order: unset !important; /* Remove ordem definida */
+    flex: 1 1 100%; /* Ocupa 100% da largura */
+  }
+
+  .empresa-img {
+    width: 100%; /* Imagem ocupa toda a largura */
+    max-width: 280px; /* Largura máxima no mobile */
+  }
+
+  .section.intro {
+    padding: 2rem 1.5rem; /* Reduz padding em telas pequenas */
+  }
+}

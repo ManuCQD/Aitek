@@ -1,0 +1,464 @@
+/* Reset */
+/* Aplica margem e padding zero para todos os elementos, e ajusta o box-sizing para border-box para facilitar o cálculo de larguras e alturas */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
+  box-sizing: border-box; /* Faz o padding e a borda entrarem no cálculo da largura e altura */
+}
+
+/* Estilos para o corpo da página */
+body {
+  font-family: 'Inter', sans-serif; /* Define a fonte principal da página */
+  color: #1a1a1a; /* Cor padrão do texto */
+  background-color: #fefefe; /* Cor de fundo branca clara */
+  line-height: 1.6; /* Altura da linha para facilitar leitura */
+  scroll-behavior: smooth; /* Rola a página suavemente em âncoras */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #fff; /* Fundo branco para o cabeçalho */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra sutil abaixo do cabeçalho */
+  position: sticky; /* Fixação do cabeçalho no topo da página ao rolar */
+  top: 0; /* Posiciona no topo da viewport */
+  z-index: 999; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Container da navegação */
+.nav-container {
+  display: flex; /* Usa flexbox para alinhamento dos itens */
+  justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
+  align-items: center; /* Alinha verticalmente ao centro */
+  padding: 1.5rem 2rem; /* Espaçamento interno */
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem; /* Tamanho da fonte maior */
+  font-weight: bold; /* Negrito */
+  color: #003366; /* Cor azul escuro */
+}
+
+/* Lista dentro da navbar */
+.navbar ul {
+  list-style: none; /* Remove marcadores de lista */
+  display: flex; /* Alinha os itens horizontalmente */
+  gap: 2rem; /* Espaçamento entre os itens */
+}
+
+/* Links da navbar */
+.navbar a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #003366; /* Cor azul escuro */
+  font-weight: 500; /* Peso médio da fonte */
+  transition: 0.3s; /* Transição suave para efeitos hover */
+}
+
+/* Efeito hover nos links da navbar */
+.navbar a:hover {
+  color: #007BFF; /* Muda cor para azul claro ao passar o mouse */
+}
+
+/* Seção Hero */
+.hero {
+  color: white; /* Texto branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 6rem 2rem; /* Espaçamento interno */
+  display: flex; /* Usa flexbox para layout interno */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  min-height: 80vh; /* Altura mínima de 80% da viewport */
+}
+
+/* Título principal do Hero */
+.hero h2 {
+  font-size: 3rem; /* Tamanho grande da fonte */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+  animation: fadeInDown 1s ease-out; /* Animação de entrada descendo */
+}
+
+/* Parágrafo do Hero */
+.hero p {
+  font-size: 1.25rem; /* Tamanho médio da fonte */
+  margin-bottom: 2.5rem; /* Espaço abaixo do parágrafo */
+  animation: fadeInUp 1s ease-out; /* Animação de entrada subindo */
+}
+
+/* Container das ações no Hero */
+.hero-actions {
+  margin-top: 1.5rem; /* Espaço acima */
+}
+
+/* Botões gerais */
+.btn, .btn-outline {
+  padding: 0.75rem 2rem; /* Espaçamento interno */
+  border-radius: 6px; /* Bordas arredondadas */
+  font-weight: 600; /* Fonte semi-negrito */
+  text-decoration: none; /* Remove sublinhado */
+  margin: 0 0.5rem; /* Margem horizontal */
+  transition: 0.3s; /* Transição suave para mudanças */
+  display: inline-block; /* Exibe como bloco inline */
+  cursor: pointer; /* Cursor em forma de mãozinha */
+}
+
+/* Botão primário */
+.btn {
+  background-color: #007BFF; /* Fundo azul */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+}
+
+/* Botão primário ao passar o mouse */
+.btn:hover {
+  background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Botão outline (contorno) */
+.btn-outline {
+  border: 2px solid white; /* Borda branca */
+  color: white; /* Texto branco */
+  background: transparent; /* Fundo transparente */
+}
+
+/* Botão outline ao passar o mouse */
+.btn-outline:hover {
+  background: white; /* Fundo branco */
+  color: #003366; /* Texto azul escuro */
+}
+
+/* Seções gerais */
+.section {
+  padding: 5rem 2rem; /* Espaçamento interno */
+  max-width: 1100px; /* Largura máxima */
+  margin: auto; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Títulos das seções */
+.section h2 {
+  font-size: 2.2rem; /* Tamanho da fonte */
+  color: #003366; /* Azul escuro */
+  margin-bottom: 2rem; /* Espaço abaixo */
+}
+
+/* Parágrafos das seções */
+.section p {
+  margin-bottom: 1.5rem; /* Espaço abaixo */
+  font-size: 1.05rem; /* Tamanho da fonte */
+  color: #333; /* Cinza escuro */
+}
+
+/* Grid para destaques */
+.destaque-grid {
+  display: grid; /* Usa grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Colunas responsivas */
+  gap: 2rem; /* Espaço entre colunas e linhas */
+  text-align: left; /* Alinha texto à esquerda */
+  color: #003366; /* Cor azul escuro */
+}
+
+/* Item de destaque individual */
+.item-destaque {
+  background: #f0f6fb; /* Fundo azul muito claro */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 1.5rem; /* Espaçamento interno */
+  box-shadow: 0 2px 8px rgba(0, 51, 102, 0.1); /* Sombra leve */
+  transition: transform 0.3s ease; /* Transição suave para transformação */
+}
+
+/* Efeito hover do item de destaque */
+.item-destaque:hover {
+  transform: translateY(-6px); /* Levanta o item */
+}
+
+/* Ícone dentro do item destaque */
+.item-destaque .icone {
+  font-size: 2.8rem; /* Tamanho grande do ícone */
+  display: block; /* Exibe como bloco */
+  margin-bottom: 0.8rem; /* Espaço abaixo do ícone */
+}
+
+/* Grid para produtos */
+.produtos-grid {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas responsivas */
+  gap: 1.8rem; /* Espaçamento */
+  margin-top: 2rem; /* Espaço acima */
+  text-align: left; /* Alinha texto à esquerda */
+}
+
+/* Cartão de produto */
+.produto {
+  background: white; /* Fundo branco */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06); /* Sombra suave */
+  padding: 1rem; /* Espaçamento interno */
+  display: flex; /* Flexbox para organizar conteúdo */
+  flex-direction: column; /* Conteúdo em coluna */
+  justify-content: space-between; /* Espaça os itens verticalmente */
+  height: 100%; /* Ocupa altura total possível */
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Hover no cartão do produto */
+.produto:hover {
+  transform: translateY(-6px); /* Levanta o cartão */
+}
+
+/* Imagem do produto */
+.produto img {
+  max-width: 100%; /* Largura máxima 100% do container */
+  height: 140px; /* Altura fixa */
+  object-fit: contain; /* Mantém proporção dentro da área */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin-bottom: 1rem; /* Espaço abaixo da imagem */
+}
+
+/* Título do produto */
+.produto h3 {
+  font-size: 1.1rem; /* Tamanho da fonte */
+  margin-bottom: 0.6rem; /* Espaço abaixo */
+  color: #003366; /* Azul escuro */
+}
+
+/* Descrição do produto */
+.produto p {
+  font-size: 0.9rem; /* Fonte menor */
+  color: #555; /* Cinza médio */
+  flex-grow: 1; /* Cresce para preencher espaço vertical */
+  margin-bottom: 1rem; /* Espaço abaixo */
+}
+
+/* Botão dentro do produto */
+.produto .btn {
+  align-self: flex-start; /* Alinha à esquerda */
+  padding: 0.5rem 1rem; /* Espaçamento interno menor */
+  font-size: 0.9rem; /* Fonte menor */
+}
+
+/* Container do carrossel de depoimentos */
+.depoimentos-carousel {
+  position: relative; /* Posicionamento relativo para elementos absolutos dentro */
+  max-width: 700px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  height: 160px; /* Altura fixa */
+  overflow: hidden; /* Esconde conteúdo que ultrapassa a altura */
+}
+
+/* Cada depoimento individual */
+.depoimento {
+  position: absolute; /* Posicionamento absoluto para sobrepor outros */
+  top: 0; /* Topo */
+  left: 0; /* Esquerda */
+  width: 100%; /* Largura total do container */
+  padding: 1.5rem 2rem; /* Espaçamento interno */
+  background: #f0f6fb; /* Fundo azul claro */
+  border-left: 5px solid #007BFF; /* Borda esquerda azul */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 8px rgba(233, 239, 245, 0.1); /* Sombra leve */
+  font-style: italic; /* Texto em itálico */
+  opacity: 0; /* Inicialmente invisível */
+  pointer-events: none; /* Não interativo quando invisível */
+  transition: opacity 0.8s ease; /* Transição suave para aparecer/desaparecer */
+  display: flex; /* Flexbox */
+  align-items: center; /* Alinha verticalmente ao centro */
+  gap: 1rem; /* Espaço entre itens internos */
+  color: #003366; /* Azul escuro */
+}
+
+/* Depoimento ativo */
+.depoimento.active {
+  opacity: 1; /* Visível */
+  pointer-events: auto; /* Interativo */
+  position: relative; /* Posicionamento normal para fluxo */
+}
+
+/* Foto do cliente no depoimento */
+.foto-cliente {
+  width: 64px; /* Largura fixa */
+  height: 64px; /* Altura fixa */
+  border-radius: 50%; /* Torna a imagem circular */
+  object-fit: cover; /* Corta e ajusta a imagem para cobrir a área */
+  flex-shrink: 0; /* Não encolhe em flexbox */
+}
+
+/* Rodapé do depoimento (nome do cliente) */
+.depoimento footer {
+  margin-left: 1rem; /* Espaço à esquerda */
+  font-style: normal; /* Fonte normal (sem itálico) */
+  font-weight: 600; /* Semi-negrito */
+  color: #d2dbe3; /* Cinza claro */
+  white-space: nowrap; /* Impede quebra de linha */
+}
+
+/* Seção dúvidas com fundo de imagem */
+.duvidas-section {
+  max-width: 600px; /* Largura máxima */
+  margin: 0 auto 4rem; /* Centraliza horizontalmente com margem inferior */
+  text-align: center; /* Centraliza texto */
+  color: white; /* Texto branco */
+  position: relative; /* Para posicionamentos internos relativos */
+  padding: 4rem 2rem; /* Espaçamento interno */
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), /* Sobreposição escura */
+    url('../img/capa3.png') no-repeat center center/cover; /* Imagem de fundo */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Sombra mais intensa */
+}
+
+.duvidas-section h2{
+  font-size: 2.5rem; /* Tamanho grande do título */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+  animation: fadeInDown 1s ease-out; /* Animação de entrada descendo */
+  color: white; /* Texto branco */
+}
+
+.duvidas-section p{
+  font-size: 1.1rem; /* Tamanho da fonte */
+  margin-bottom: 2rem; /* Espaço abaixo do parágrafo */
+  color: white; /* Texto branco */
+}
+
+/* Formulário dentro da seção dúvidas */
+.duvidas-section form {
+  display: flex; /* Flexbox para os campos */
+  flex-direction: column; /* Organização em coluna */
+  gap: 1rem; /* Espaço entre campos */
+  text-align: left; /* Alinha texto dos campos à esquerda */
+}
+
+/* Inputs e textarea do formulário */
+.duvidas-section input,
+.duvidas-section textarea {
+  padding: 0.75rem 1rem; /* Espaçamento interno */
+  font-size: 1rem; /* Tamanho da fonte */
+  border-radius: 6px; /* Bordas arredondadas */
+  border: 1.5px solid #ccc; /* Borda cinza clara */
+  resize: vertical; /* Permite redimensionar verticalmente */
+  transition: border-color 0.3s ease; /* Transição da cor da borda */
+  width: 100%; /* Ocupa 100% da largura do container */
+}
+
+/* Foco em inputs e textarea */
+.duvidas-section input:focus,
+.duvidas-section textarea:focus {
+  border-color: #007BFF; /* Borda azul ao focar */
+  outline: none; /* Remove contorno padrão */
+}
+
+/* Botão do formulário */
+.duvidas-section button {
+  align-self: center; /* Centraliza o botão */
+  padding: 0.75rem 2rem; /* Espaçamento interno */
+  font-size: 1.1rem; /* Tamanho da fonte */
+  background-color: #007BFF; /* Fundo azul */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  border-radius: 6px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de botão */
+  transition: background 0.3s ease; /* Transição suave para fundo */
+}
+
+/* Hover no botão */
+.duvidas-section button:hover {
+  background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Rodapé */
+footer {
+  background: #003366; /* Fundo azul escuro */
+  color: white; /* Texto branco */
+  padding: 2rem; /* Espaçamento interno */
+  text-align: center; /* Centraliza texto */
+}
+
+/* Links sociais no rodapé */
+footer .social a {
+  margin: 0 0.75rem; /* Margem horizontal */
+  color: white; /* Cor branca */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: 500; /* Peso médio da fonte */
+}
+
+/* Hover nos links sociais */
+footer .social a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed; /* Fixa posição na tela */
+  bottom: 20px; /* Distância da base da tela */
+  right: 20px; /* Distância da lateral direita */
+  background: #25D366; /* Cor verde WhatsApp */
+  color: white; /* Ícone branco */
+  border-radius: 50%; /* Botão circular */
+  width: 56px; /* Largura fixa */
+  height: 56px; /* Altura fixa */
+  display: flex; /* Flexbox para centralizar conteúdo */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  font-size: 24px; /* Tamanho do ícone */
+  text-decoration: none; /* Remove sublinhado */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Sombra ao redor */
+  z-index: 1000; /* Fica acima de outros elementos */
+}
+
+/* Animação fadeInDown */
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-20px);} /* Começa invisível e movendo para cima */
+  to {opacity: 1; transform: translateY(0);} /* Termina visível e na posição normal */
+}
+
+/* Animação fadeInUp */
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(20px);} /* Começa invisível e movendo para baixo */
+  to {opacity: 1; transform: translateY(0);} /* Termina visível e na posição normal */
+}
+
+/* Estilos responsivos para telas até 768px */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column; /* Coloca itens em coluna */
+    align-items: flex-start; /* Alinha à esquerda */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Itens da lista em coluna */
+    gap: 1rem; /* Espaçamento menor */
+    margin-top: 1rem; /* Espaço acima */
+  }
+
+  .hero h2 {
+    font-size: 2.2rem; /* Tamanho menor do título */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Tamanho menor do parágrafo */
+  }
+}
+
+/* Estilos responsivos para telas até 600px */
+@media (max-width: 600px) {
+  .hero {
+    padding: 4rem 1rem; /* Menos espaçamento no hero */
+  }
+
+  .hero h2 {
+    font-size: 1.8rem; /* Título menor */
+  }
+
+  .hero p {
+    font-size: 0.9rem; /* Texto menor */
+  }
+
+  .section h2 {
+    font-size: 1.8rem; /* Títulos das seções menores */
+  }
+
+  .section p {
+    font-size: 0.95rem; /* Texto das seções menor */
+  }
+}

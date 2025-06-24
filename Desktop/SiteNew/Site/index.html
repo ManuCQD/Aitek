@@ -1,0 +1,178 @@
+<!DOCTYPE html> <!-- Define o documento como HTML5 -->
+<html lang="pt-BR"> <!-- Inicia o HTML, aponta que o idioma do conteúdo é português do Brasil -->
+<head> <!-- Início da seção de metadados -->
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsividade em dispositivos móveis -->
+  <title>Aitek | Soluções Industriais</title> <!-- Título exibido na aba do navegador -->
+  <link rel="stylesheet" href="design/style.css" /> <!-- Link para arquivo CSS externo -->
+</head>
+<body> <!-- Início do conteúdo visível da página -->
+
+  <header> <!-- Tag semântica: seção de cabeçalho com navegação -->
+    <div class="nav-container"> <!-- Container flexível para conter logo e menu -->
+      <h1 class="logo">Aitek</h1> <!-- Título principal da página, estilizado como logo -->
+      <nav class="navbar"> <!-- Tag semântica para navegação principal -->
+        <ul class="nav-list"> <!-- Lista de itens de navegação -->
+          <li><a href="index.html">Início</a></li> <!-- Link para a home -->
+          <li><a href="sobre.html">Sobre</a></li> <!-- Link para página "Sobre" -->
+          <li><a href="rep.html">Representações</a></li> <!-- Link para representar marcas -->
+          <li><a href="produtos.html">Produtos</a></li> <!-- Link para oferecer catálogo de produtos -->
+          <li><a href="ecommerce.html">E-Commerce</a></li> <!-- Link para loja online -->
+          <li><a href="contato.html">Contato</a></li> <!-- Link para página de contato -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main> <!-- Tag semântica: principal conteúdo da página -->
+
+    <!-- Hero -->
+    <section id="home" class="hero" style="background: url('img/capa1.png') center/cover no-repeat"> <!-- Seção de destaque inicial com imagem de fundo -->
+      <h2>Conectando Indústria à Inovação</h2> <!-- Título chamativo centralizado -->
+      <p>Materiais e soluções elétricas confiáveis desde 1994.</p> <!-- Subtítulo explicativo -->
+      <div class="hero-actions"> <!-- Container para botões de ação no hero -->
+        <a href="produtos.html" class="btn">Ver Produtos</a> <!-- Botão azul principal -->
+        <a href="represent.html" class="btn-outline">Nossas Marcas</a> <!-- Botão de contorno -->
+      </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="section"> <!-- Seção instituindo a empresa -->
+      <h2>Quem Somos</h2> <!-- Título da seção -->
+      <p> <!-- Descrição da empresa -->
+        A Aitek representa marcas renomadas do setor industrial, oferecendo
+        soluções confiáveis e suporte técnico especializado para o seu negócio
+        crescer.
+      </p>
+      <a href="sobre.html" class="btn">Saiba mais</a> <!-- Botão de call-to-action -->
+    </section>
+
+    <!-- Destaques -->
+    <section id="destaques" class="section destaque-grid"> <!-- Seção que apresenta os pontos fortes da empresa -->
+      <div class="item-destaque"> <!-- Card de destaque -->
+        <span class="icone">🤝</span> <!-- Ícone ilustrativo -->
+        <h3>Atendimento Especializado</h3> <!-- Título do serviço -->
+        <p>Equipe treinada para entender suas necessidades e oferecer o melhor.</p> <!-- Descrição do serviço -->
+      </div>
+      <div class="item-destaque">
+        <span class="icone">✅</span>
+        <h3>Produtos de Qualidade</h3>
+        <p>Parcerias com marcas líderes para garantir eficiência e segurança.</p>
+      </div>
+      <div class="item-destaque">
+        <span class="icone">🚚</span>
+        <h3>Entrega Rápida</h3>
+        <p>Logística eficiente para que você receba seus produtos no prazo.</p>
+      </div>
+      <div class="item-destaque">
+        <span class="icone">📞</span>
+        <h3>Suporte Técnico</h3>
+        <p>Apoio contínuo para auxiliar na melhor utilização dos produtos.</p>
+      </div>
+    </section>
+
+    <!-- Produtos em destaque -->
+    <section id="produtos-destaque" class="section"> <!-- Seção dedicada aos produtos principais -->
+      <h2>Produtos em Destaque</h2> <!-- Título da seção -->
+      <div class="produtos-grid"> <!-- Grade para cards de produtos -->
+        <article class="produto"> <!-- Tag semântica: item individual de produto -->
+          <img src="img/produto1.png" alt="Fonte Emparro 3~ 40A" /> <!-- Imagem do produto com descrição -->
+          <h3>Fonte de Alimentação Emparro® 3~ 40A</h3> <!-- Nome do produto -->
+          <p>Alta eficiência para sistemas industriais trifásicos.</p> <!-- Descrição curta -->
+          <a href="produtos.html" class="btn">Ver Produto</a> <!-- Botão para ver detalhes -->
+        </article>
+        <article class="produto">
+          <img src="img/produto2.png" alt="Chave de Segurança STM" />
+          <h3>Chave de Segurança STM – Euchner</h3>
+          <p>Segurança mecânica com alta confiabilidade e fácil instalação.</p>
+          <a href="produtos.html" class="btn">Ver Produto</a>
+        </article>
+        <article class="produto">
+          <img src="img/produto3.png" alt="Módulo MICO Pro®" />
+          <h3>Módulo de Distribuição Compacto MICO Pro®</h3>
+          <p>Monitoramento inteligente para distribuição de energia 24VDC.</p>
+          <a href="produtos.html" class="btn">Ver Produto</a>
+        </article>
+      </div>
+    </section> <!-- Fim da seção de produtos -->
+
+    <!-- Depoimentos (carrossel com imagens) -->
+    <section id="depoimentos" class="section"> <!-- Seção para avaliações de clientes -->
+      <h2>O que dizem nossos clientes</h2> <!-- Título da seção -->
+      <div class="depoimentos-carousel"> <!-- Container com rotação automática de slides -->
+        <div class="depoimento active"> <!-- Slide ativo inicialmente -->
+          <img src="img/perfil.jpg" alt="Carlos Silva" class="foto-cliente"> <!-- Foto do cliente -->
+          <p>“A Aitek nos fornece soluções confiáveis e um atendimento que realmente entende as necessidades da nossa indústria.”</p> <!-- Texto do depoimento -->
+          <footer>- Carlos Silva, Indústria XYZ</footer> <!-- Informações do cliente -->
+        </div>
+        <div class="depoimento">
+          <img src="img/perfil2.jpg" alt="Ana Souza" class="foto-cliente">
+          <p>“Produtos de qualidade e entrega rápida fazem toda a diferença em nossos projetos.”</p>
+          <footer>- Ana Souza, Automação ABC</footer>
+        </div>
+        <div class="depoimento">
+          <img src="img/perfil.jpg" alt="João Pereira" class="foto-cliente">
+          <p>“Equipe extremamente profissional, sempre pronta para ajudar e com soluções rápidas.”</p>
+          <footer>- João Pereira, Indústria 123</footer>
+        </div>
+      </div>
+    </section>
+
+    <!-- Área de Dúvidas com formulário -->
+    <section id="duvidas" class="section duvidas-section"> <!-- Seção para dúvidas com estilo diferenciado -->
+      <h2>Dúvidas?</h2> <!-- Título convidativo -->
+      <p>Envie sua dúvida preenchendo o formulário abaixo. Responderemos o mais rápido possível.</p> <!-- Instrução para o usuário -->
+      <form id="form-duvidas" action="mailto:contato@aitek.com.br" method="GET" enctype="text/plain" onsubmit="return enviarEmail(event)"> <!-- Formulário que monta mailto e abre cliente de email -->
+        <input type="text" name="nome" placeholder="Seu nome" required /> <!-- Campo nome, obrigatório -->
+        <input type="email" name="email" placeholder="Seu email" required /> <!-- Campo email, obrigatório -->
+        <textarea name="mensagem" rows="5" placeholder="Sua dúvida" required></textarea> <!-- Campo de mensagem, obrigatório -->
+        <button type="submit" class="btn">Enviar</button> <!-- Botão de envio estilizado -->
+      </form>
+    </section>
+
+  </main> <!-- Fim do conteúdo principal -->
+
+  <footer> <!-- Tag semântica: rodapé com informações institucionais -->
+    <p>&copy; 2025 Aitek Representações. Todos os direitos reservados.</p> <!-- Aviso de direitos autorais -->
+    <p>Rua Zeev Jabotinski, 106 - Porto Alegre/RS</p> <!-- Endereço da empresa -->
+    <div class="social"> <!-- Área com links para redes sociais -->
+      <a href="https://linkedin.com/company/aitekrs" target="_blank">LinkedIn</a> <!-- Link para LinkedIn -->
+      <a href="https://facebook.com/aitekrs" target="_blank">Facebook</a> <!-- Link para Facebook -->
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5551999999999" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">💬</a> <!-- Acesso rápido ao WhatsApp -->
+
+  <script> <!-- Script para funcionalidades interativas -->
+    // Carrossel depoimentos - troca automática a cada 4 segundos
+    const depoimentos = document.querySelectorAll('.depoimento'); // Seleciona todos os elementos com classe .depoimento
+    let indexAtivo = 0; // Índice inicial do depoimento visível
+
+    function mostrarDepoimento(i) { // Função que ativa depoimento com base no índice
+      depoimentos.forEach((dep, idx) => {
+        dep.classList.toggle('active', idx === i); // Ativa somente o depoimento de índice igual ao parâmetro
+      });
+    }
+
+    setInterval(() => { // Função que roda a cada 4000ms (4s)
+      indexAtivo = (indexAtivo + 1) % depoimentos.length; // Cicla pelo índice dos depoimentos
+      mostrarDepoimento(indexAtivo); // Exibe o próximo depoimento
+    }, 4000);
+
+    // Função para montar link mailto e disparar cliente de email
+    function enviarEmail(event) {
+      event.preventDefault(); // Previne comportamento padrão de envio
+      const form = event.target; // Refere-se ao formulário enviado
+      const nome = encodeURIComponent(form.nome.value); // Codifica o campo nome
+      const email = encodeURIComponent(form.email.value); // Codifica o campo email
+      const mensagem = encodeURIComponent(form.mensagem.value); // Codifica o campo mensagem
+
+      const body = `Nome: ${nome}%0D%0AEmail: ${email}%0D%0AMensagem: ${mensagem}`; // Monta corpo do email com quebras de linha
+
+      window.location.href = `mailto:contato@aitek.com.br?subject=Dúvida do Site&body=${body}`; // Abre cliente de email
+      return false; // Evita qualquer outro envio
+    }
+  </script>
+</body>
+</html>

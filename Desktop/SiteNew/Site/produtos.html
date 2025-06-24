@@ -1,0 +1,135 @@
+<!DOCTYPE html> <!-- Declara que este é um documento HTML5 -->
+<html lang="pt-BR"> <!-- Elemento raiz do documento, idioma definido para português do Brasil -->
+<head> <!-- Cabeçalho do documento, contém metadados e links -->
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis, garantindo responsividade -->
+  <title>Catálogo de Produtos</title> <!-- Título da página exibido na aba do navegador -->
+  <link rel="stylesheet" href="design/produtos.css"> <!-- Link para o arquivo CSS que estiliza esta página -->
+</head>
+<body> <!-- Corpo da página, onde o conteúdo visível fica -->
+
+  <header> <!-- Cabeçalho do site, geralmente contém logo e navegação -->
+    <div class="nav-container"> <!-- Contêiner para organizar o conteúdo do cabeçalho -->
+      <h1 class="logo">Aitek</h1> <!-- Título principal da página/site, usado como logo -->
+      <nav class="navbar"> <!-- Elemento de navegação principal -->
+        <ul class="nav-list"> <!-- Lista não ordenada contendo links do menu -->
+          <li><a href="index.html">Início</a></li> <!-- Link para página inicial -->
+          <li><a href="sobre.html">Sobre</a></li> <!-- Link para página sobre a empresa -->
+          <li><a href="represent.html">Representações</a></li> <!-- Link para página de representações -->
+          <li><a href="produtos.html">Produtos</a></li> <!-- Link para página de produtos (atual) -->
+          <li><a href="ecommerce.html">E-Commerce</a></li> <!-- Link para loja online -->
+          <li><a href="contato.html">Contato</a></li> <!-- Link para página de contato -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="top-bar"> <!-- Barra superior para filtros e carrinho -->
+    <select class="filtro"> <!-- Menu suspenso para filtro por marca -->
+      <option value="todos">Todas as Marcas</option> <!-- Opção para mostrar todos os produtos -->
+      <option value="murr">Murr Elektronik</option> <!-- Opção para filtrar produtos da marca Murr -->
+      <option value="euchner">Euchner</option> <!-- Opção para filtrar produtos da marca Euchner -->
+    </select>
+    <div class="carrinho"> <!-- Exibição do status do carrinho de compras -->
+      🛒 Carrinho: <span class="contador">0</span> <!-- Ícone de carrinho e contador de itens -->
+    </div>
+  </div>
+
+  <main class="catalogo"> <!-- Conteúdo principal: catálogo de produtos -->
+    <div class="produto murr"> <!-- Produto com classe indicando a marca (Murr) -->
+      <img src="img/produto1.png" alt="Produto 1"> <!-- Imagem do produto com texto alternativo -->
+      <h2>Fonte de Alimentação Emparro® 3~ 40A – Murr Elektronik</h2> <!-- Nome/título do produto -->
+      <p>Fonte de alimentação trifásica altamente eficiente da linha Emparro...</p> <!-- Descrição breve do produto -->
+      <button>Adicionar ao Carrinho</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+
+    <div class="produto euchner"> <!-- Produto da marca Euchner -->
+      <img src="img/produto2.png" alt="Produto 2">
+      <h2>Chave de Segurança STM – Euchner</h2>
+      <p>Dispositivo de travamento de segurança mecânico com atuador separado...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto murr">
+      <img src="img/produto3.png" alt="Produto 3">
+      <h2>Módulo de Distribuição Compacto MICO Pro® – Murr Elektronik</h2>
+      <p>Sistema inteligente de monitoramento de corrente para distribuição de energia 24VDC...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto murr">
+      <img src="img/produto4.jpg" alt="Produto 4">
+      <h2>Conector Industrial RJ45 IP67 – Murr Elektronik</h2>
+      <p>Conector RJ45 industrial com montagem rápida sem ferramentas...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Repetição dos produtos acima para preencher catálogo -->
+
+    <div class="produto murr">
+      <img src="img/produto1.png" alt="Produto 1">
+      <h2>Fonte de Alimentação Emparro® 3~ 40A – Murr Elektronik</h2>
+      <p>Fonte de alimentação trifásica altamente eficiente da linha Emparro...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto euchner">
+      <img src="img/produto2.png" alt="Produto 2">
+      <h2>Chave de Segurança STM – Euchner</h2>
+      <p>Dispositivo de travamento de segurança mecânico com atuador separado...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto murr">
+      <img src="img/produto3.png" alt="Produto 3">
+      <h2>Módulo de Distribuição Compacto MICO Pro® – Murr Elektronik</h2>
+      <p>Sistema inteligente de monitoramento de corrente para distribuição de energia 24VDC...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto murr">
+      <img src="img/produto4.jpg" alt="Produto 4">
+      <h2>Conector Industrial RJ45 IP67 – Murr Elektronik</h2>
+      <p>Conector RJ45 industrial com montagem rápida sem ferramentas...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto murr">
+      <img src="img/produto1.png" alt="Produto 1">
+      <h2>Fonte de Alimentação Emparro® 3~ 40A – Murr Elektronik</h2>
+      <p>Fonte de alimentação trifásica altamente eficiente da linha Emparro...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto euchner">
+      <img src="img/produto2.png" alt="Produto 2">
+      <h2>Chave de Segurança STM – Euchner</h2>
+      <p>Dispositivo de travamento de segurança mecânico com atuador separado...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto murr">
+      <img src="img/produto3.png" alt="Produto 3">
+      <h2>Módulo de Distribuição Compacto MICO Pro® – Murr Elektronik</h2>
+      <p>Sistema inteligente de monitoramento de corrente para distribuição de energia 24VDC...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto murr">
+      <img src="img/produto4.jpg" alt="Produto 4">
+      <h2>Conector Industrial RJ45 IP67 – Murr Elektronik</h2>
+      <p>Conector RJ45 industrial com montagem rápida sem ferramentas...</p>
+      <button>Adicionar ao Carrinho</button>
+    </div>
+  </main>
+
+  <footer> <!-- Rodapé da página -->
+    <p>&copy; 2025 Aitek Representações. Todos os direitos reservados.</p> <!-- Direitos autorais -->
+    <p>Rua Zeev Jabotinski, 106 - Porto Alegre/RS</p> <!-- Endereço da empresa -->
+    <div class="social"> <!-- Links para redes sociais -->
+      <a href="https://linkedin.com/company/aitekrs" target="_blank">LinkedIn</a> <!-- Link para LinkedIn, abre em nova aba -->
+      <a href="https://facebook.com/aitekrs" target="_blank">Facebook</a> <!-- Link para Facebook, abre em nova aba -->
+    </div>
+  </footer>
+</body>
+</html>

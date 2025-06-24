@@ -1,0 +1,173 @@
+/* Fundo geral */
+body {
+  background: linear-gradient(to right, #eaf3fc, #f4faff); /* Define um fundo em degradê da esquerda para a direita */
+  font-family: 'Inter', sans-serif;                         /* Define a fonte padrão do site como Inter, ou sans-serif se não carregar */
+  color: #1a1a1a;                                            /* Define a cor padrão do texto como cinza escuro */
+  line-height: 1.6;                                          /* Define o espaçamento entre linhas para melhorar a leitura */
+}
+
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;                      /* Elemento começa invisível */
+    transform: translateY(30px);     /* Deslocado 30px para baixo */
+  }
+  to {
+    opacity: 1;                      /* Fica totalmente visível */
+    transform: translateY(0);        /* Retorna à posição original */
+  }
+}
+
+/* Seção principal */
+.cadastro-section {
+  background-color: #003366;
+  padding: 4rem 2rem;                            /* Espaçamento interno: 4rem vertical e 2rem horizontal */
+  max-width: 1200px;                             /* Largura máxima da seção */
+  margin: 0 auto;                                /* Centraliza horizontalmente */
+  animation: fadeInUp 0.6s ease-in-out;          /* Aplica a animação definida acima */
+}
+
+.contato-img {
+  width: 100%;                    /* Faz a imagem ocupar toda a largura da coluna dela */
+  height: 100%;                   /* Faz a altura igual à do formulário, assumindo colunas iguais */
+  object-fit: cover;              /* Garante que a imagem preencha o espaço sem distorcer */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05); /* Sombra igual ao formulário */
+  background-color: white;        /* Evita fundo estranho se a imagem tiver transparência */
+}
+
+
+/* Título principal dentro da seção */
+.cadastro-section h2 {
+  font-size: 2.4rem;                             /* Define o tamanho da fonte grande para destaque */
+  color: white;                                /* Azul escuro */
+  text-align: center;                            /* Centraliza o texto */
+  margin-bottom: 1rem;                           /* Espaço abaixo do título */
+}
+
+/* Subtítulo dentro da seção */
+.cadastro-section h3 {
+  font-size: 1.2rem;                             /* Tamanho de fonte menor que o h2 */
+  color: white;                                   /* Cinza médio */
+  text-align: center;                            /* Centraliza o subtítulo */
+  margin-bottom: 3rem;                           /* Espaço maior abaixo */
+}
+
+/* Layout em grade para o conteúdo da seção */
+.cadastro-container {
+  display: grid;                                 /* Ativa o grid layout */
+  grid-template-columns: 1fr 1fr;                /* Duas colunas de largura igual */
+  gap: 2rem;                                     /* Espaçamento entre colunas */
+  align-items: start;                            /* Alinha os itens ao topo */
+}
+
+/* Estilização do formulário */
+.form-cadastro {
+  display: flex;                                 /* Ativa layout flexível */
+  flex-direction: column;                        /* Coloca os elementos em coluna */
+  gap: 1rem;                                     /* Espaço entre os campos */
+  background-color: white;                       /* Fundo branco */
+  padding: 2rem;                                 /* Espaçamento interno */
+  border-radius: 12px;                           /* Bordas arredondadas */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);     /* Sombra suave para dar profundidade */
+}
+
+
+/* Estilização de campos de texto e área de texto */
+.form-cadastro input,
+.form-cadastro textarea {
+  padding: 0.9rem 1rem;                          /* Espaçamento interno dos campos */
+  border: 1px solid #ccc;                        /* Borda cinza clara */
+  border-radius: 8px;                            /* Bordas arredondadas */
+  font-size: 1rem;                               /* Tamanho da fonte padrão */
+  transition: border-color 0.3s, box-shadow 0.3s;/* Transição suave ao interagir */
+}
+
+/* Estilo ao focar nos campos */
+.form-cadastro input:focus,
+.form-cadastro textarea:focus {
+  border-color: #007BFF;                         /* Muda a cor da borda ao focar */
+  outline: none;                                 /* Remove contorno padrão do navegador */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);   /* Adiciona sombra azul clara */
+}
+
+/* Estilo do botão do formulário */
+.form-cadastro button {
+  background-color: #003366;                     /* Azul escuro como cor de fundo */
+  color: white;                                  /* Texto branco */
+  padding: 0.9rem;                               /* Espaçamento interno */
+  border: none;                                  /* Remove borda padrão */
+  border-radius: 8px;                            /* Bordas arredondadas */
+  font-size: 1rem;                               /* Tamanho do texto padrão */
+  cursor: pointer;                               /* Cursor de mãozinha */
+  transition: background-color 0.3s;             /* Suaviza mudança de cor */
+}
+
+/* Efeito ao passar o mouse no botão */
+.form-cadastro button:hover {
+  background-color: #0055aa;                     /* Tom de azul mais claro no hover */
+}
+
+/* Bloco de informações de contato */
+.contato-info {
+  background-color: white;                       /* Fundo branco */
+  padding: 2rem;                                 /* Espaçamento interno */
+  border-radius: 12px;                           /* Bordas arredondadas */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);     /* Sombra suave */
+  margin-bottom: 2rem;                           /* Espaço abaixo do bloco */
+}
+
+/* Título das informações de contato */
+.contato-info h3 {
+  font-size: 1.5rem;                             /* Tamanho do texto maior */
+  color: #003366;                                /* Azul escuro */
+  margin-bottom: 1rem;                           /* Espaço abaixo do título */
+}
+
+/* Parágrafos com dados de contato */
+.contato-info p {
+  font-size: 1rem;                               /* Tamanho padrão do texto */
+  margin-bottom: 0.5rem;                         /* Espaço entre os parágrafos */
+}
+
+/* Estilização do mapa */
+.mapa-container {
+  height: 300px;                                 /* Altura do mapa */
+  border-radius: 12px;                           /* Bordas arredondadas */
+  overflow: hidden;                              /* Oculta partes que ultrapassam */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);     /* Sombra suave */
+  grid-column: span 1;                           /* Ocupa duas colunas do grid */
+}
+
+/* Rodapé da página */
+footer {
+  background-color: #003366;                     /* Fundo azul escuro */
+  color: white;                                  /* Texto branco */
+  padding: 2rem;                                 /* Espaçamento interno */
+  text-align: center;                            /* Centraliza o texto */
+  margin-top: 4rem;                              /* Espaço acima do rodapé */
+}
+
+/* Links das redes sociais no rodapé */
+footer .social a {
+  color: white;                                  /* Cor dos links */
+  margin: 0 0.5rem;                              /* Espaçamento lateral */
+  text-decoration: none;                         /* Remove sublinhado */
+  font-weight: 500;                              /* Peso médio da fonte */
+}
+
+/* Efeito ao passar o mouse nos links sociais */
+footer .social a:hover {
+  text-decoration: underline;                    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Regras de responsividade */
+@media (max-width: 900px) {
+  .cadastro-container {
+    grid-template-columns: 1fr;                  /* Altera para uma única coluna em telas pequenas */
+  }
+
+  .mapa-container {
+    height: 250px;                               /* Reduz a altura do mapa em dispositivos menores */
+  }
+}

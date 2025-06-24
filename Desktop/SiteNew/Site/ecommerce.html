@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!-- Declara que o documento é HTML5 -->
+<html lang="pt-BR"> <!-- Raiz do documento, idioma definido como português do Brasil -->
+<head> <!-- Cabeçalho da página, contém metadados e links externos -->
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Configuração para responsividade em dispositivos móveis -->
+  <title>E-Commerce | Aitek</title> <!-- Título da aba do navegador -->
+
+  <link rel="stylesheet" href="design/ecommerce.css" /> <!-- Link para o arquivo CSS que estiliza esta página -->
+</head>
+<body> <!-- Corpo da página, onde está o conteúdo visível -->
+
+  <header> <!-- Cabeçalho do site, geralmente contém logo e navegação -->
+    <div class="nav-container"> <!-- Container para o logo e menu -->
+      <h1 class="logo">Aitek</h1> <!-- Título principal da página, representando o logo -->
+      <nav class="navbar"> <!-- Navegação principal da página -->
+        <ul class="nav-list"> <!-- Lista não ordenada que contém os links do menu -->
+          <li><a href="index.html">Início</a></li> <!-- Link para a página inicial -->
+          <li><a href="sobre.html">Sobre</a></li> <!-- Link para a página sobre -->
+          <li><a href="represent.html">Representações</a></li> <!-- Link para representações -->
+          <li><a href="produtos.html">Produtos</a></li> <!-- Link para produtos -->
+          <li><a href="ecommerce.html">E-Commerce</a></li> <!-- Link para a página atual (e-commerce) -->
+          <li><a href="contato.html">Contato</a></li> <!-- Link para contato -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main"> <!-- Conteúdo principal da página -->
+    <section id="produtos" class="produtos"> <!-- Seção que lista os produtos disponíveis -->
+      <h2>Produtos Disponíveis</h2> <!-- Título da seção de produtos -->
+      <div class="produtos-grid"> <!-- Container em grid para organizar os produtos -->
+
+        <!-- Produto 1 -->
+        <div class="produto" data-id="1"> <!-- Container de um produto com atributo data para identificar -->
+          <img src="img/produto1.png" alt="Produto 1" /> <!-- Imagem do produto, com texto alternativo -->
+          <h3>Sensor IO-Link</h3> <!-- Nome do produto -->
+          <p>R$ 450,00</p> <!-- Preço do produto -->
+          <button class="adicionar">Adicionar ao Carrinho</button> <!-- Botão para adicionar o produto ao carrinho -->
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto" data-id="2">
+          <img src="img/produto2.png" alt="Produto 2" />
+          <h3>Fonte ECO-RAIL</h3>
+          <p>R$ 299,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto" data-id="3">
+          <img src="img/produto3.png" alt="Produto 3" />
+          <h3>Chave de Segurança</h3>
+          <p>R$ 180,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto" data-id="4">
+          <img src="img/produto4.jpg" alt="Produto 4" />
+          <h3>Conector Industrial</h3>
+          <p>R$ 220,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Repetição dos produtos acima (possível para demonstração ou rolagem infinita) -->
+        <div class="produto" data-id="1">
+          <img src="img/produto1.png" alt="Produto 1" />
+          <h3>Sensor IO-Link</h3>
+          <p>R$ 450,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-id="2">
+          <img src="img/produto2.png" alt="Produto 2" />
+          <h3>Fonte ECO-RAIL</h3>
+          <p>R$ 299,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-id="3">
+          <img src="img/produto3.png" alt="Produto 3" />
+          <h3>Chave de Segurança</h3>
+          <p>R$ 180,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-id="4">
+          <img src="img/produto4.jpg" alt="Produto 4" />
+          <h3>Conector Industrial</h3>
+          <p>R$ 220,00</p>
+          <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="carrinho" class="carrinho"> <!-- Seção que mostra o carrinho de compras -->
+      <h2>Seu Carrinho</h2> <!-- Título do carrinho -->
+      <ul class="lista-carrinho">
+        <!-- Itens adicionados dinamicamente pelo JavaScript aparecerão aqui -->
+      </ul>
+      <p class="total">Total: R$ <span id="total">0,00</span></p> <!-- Mostra o total do carrinho -->
+      <button class="finalizar">Finalizar Compra</button> <!-- Botão para finalizar a compra -->
+    </section>
+  </main>
+
+  <footer class="footer"> <!-- Rodapé do site -->
+    <p>&copy; 2025 Aitek Representações - E-Commerce</p> <!-- Direitos autorais -->
+  </footer>
+
+  <script src="ecommerce.js"></script> <!-- Script JavaScript que provavelmente controla o carrinho e interatividade -->
+</body>
+</html>

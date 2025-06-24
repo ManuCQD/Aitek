@@ -1,0 +1,168 @@
+/* Reset padrão */
+* {
+  margin: 0; /* Remove margem padrão de todos os elementos */
+  padding: 0; /* Remove espaçamento interno padrão */
+  box-sizing: border-box; /* Inclui padding e borda dentro do tamanho total do elemento */
+}
+
+/* Estilização global do corpo da página */
+body {
+  font-family: 'Inter', sans-serif; /* Define a fonte principal */
+  color: #1a1a1a; /* Cor padrão do texto */
+  background-color: #fefefe; /* Cor de fundo clara */
+  line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+}
+
+/* ======================== */
+/* Cabeçalho do site */
+/* ======================== */
+header {
+  background-color: #fff; /* Fundo branco no cabeçalho */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra leve abaixo do cabeçalho */
+  position: sticky; /* Fixa o cabeçalho no topo durante a rolagem */
+  top: 0; /* Gruda no topo da janela */
+  z-index: 999; /* Garante que fique acima de outros elementos */
+}
+
+.nav-container {
+  display: flex; /* Usa layout flexível */
+  justify-content: space-between; /* Espaça logo e menu nas extremidades */
+  align-items: center; /* Alinha os itens verticalmente */
+  padding: 1.5rem 2rem; /* Espaçamento interno */
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.logo {
+  font-size: 1.8rem; /* Tamanho da logo */
+  font-weight: bold; /* Negrito */
+  color: #003366; /* Cor azul escura */
+}
+
+.navbar ul {
+  list-style: none; /* Remove os marcadores da lista */
+  display: flex; /* Exibe itens lado a lado */
+  gap: 2rem; /* Espaço entre os links */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove sublinhado */
+  color: #003366; /* Cor azul escura */
+  font-weight: 500; /* Peso médio da fonte */
+  transition: 0.3s; /* Animação suave no hover */
+}
+
+.navbar a:hover {
+  color: #007BFF; /* Altera a cor ao passar o mouse */
+}
+
+/* ======================== */
+/* Barra superior com filtro e carrinho */
+/* ======================== */
+.top-bar {
+  max-width: 1200px; /* Largura máxima da barra */
+  margin: 2rem auto; /* Espaço vertical e centraliza horizontalmente */
+  padding: 0 2rem; /* Espaçamento lateral */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaça filtro e carrinho */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.filtro {
+  padding: 0.5rem 1rem; /* Espaçamento interno do seletor */
+  font-size: 1rem; /* Tamanho da fonte */
+}
+
+.carrinho {
+  font-weight: bold; /* Negrito */
+  font-size: 1rem; /* Tamanho da fonte */
+  color: #003366; /* Azul escuro */
+}
+
+/* ======================== */
+/* Grade de produtos */
+/* ======================== */
+.catalogo {
+  display: grid; /* Layout em grade */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colunas adaptáveis */
+  gap: 16px; /* Espaço entre os produtos */
+  max-width: 1200px; /* Largura máxima */
+  margin: 2rem auto; /* Espaço vertical e centralização */
+  padding: 0 2rem; /* Espaçamento lateral */
+}
+
+.produto {
+  background: white; /* Fundo branco do card */
+  border-radius: 12px; /* Cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04); /* Sombra suave */
+  padding: 12px; /* Espaçamento interno */
+  text-align: left; /* Alinhamento do texto à esquerda */
+  transition: transform 0.2s ease; /* Animação no hover */
+  font-size: 0.9rem; /* Tamanho padrão da fonte */
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Elementos empilhados verticalmente */
+  justify-content: space-between; /* Espaça os elementos internos */
+  height: 100%; /* Preenche a altura do container pai */
+}
+
+.produto:hover {
+  transform: translateY(-3px); /* Leve elevação ao passar o mouse */
+}
+
+.produto img {
+  max-width: 100%; /* Ajusta a imagem à largura do container */
+  height: 120px; /* Altura fixa */
+  object-fit: contain; /* Redimensiona sem distorcer */
+  border-radius: 8px; /* Cantos arredondados */
+  margin-bottom: 12px; /* Espaço abaixo da imagem */
+}
+
+.produto h2 {
+  font-size: 1rem; /* Tamanho do título */
+  margin-bottom: 6px; /* Espaço abaixo do título */
+  color: #111; /* Cor do texto */
+}
+
+.produto p {
+  font-size: 0.85rem; /* Tamanho do parágrafo */
+  color: #666; /* Cinza escuro */
+  margin-bottom: 12px; /* Espaço abaixo do parágrafo */
+  flex-grow: 1; /* Ocupa o espaço vertical restante */
+}
+
+.produto button {
+  align-self: flex-start; /* Alinha o botão à esquerda */
+  padding: 0.4rem 0.8rem; /* Espaçamento interno */
+  background-color: #003366; /* Cor azul escura */
+  color: white; /* Texto branco */
+  border: none; /* Remove borda */
+  border-radius: 6px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de clique */
+  font-size: 0.9rem; /* Tamanho da fonte */
+  transition: background 0.3s ease; /* Animação de cor no hover */
+}
+
+.produto button:hover {
+  background-color: #0055aa; /* Azul mais claro ao passar o mouse */
+}
+
+/* ======================== */
+/* Rodapé */
+/* ======================== */
+footer {
+  background: #003366; /* Fundo azul escuro */
+  color: white; /* Texto branco */
+  padding: 2rem; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+footer .social a {
+  margin: 0 0.75rem; /* Espaçamento lateral entre ícones */
+  color: white; /* Cor dos links */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: 500; /* Peso médio */
+}
+
+footer .social a:hover {
+  text-decoration: underline; /* Sublinha ao passar o mouse */
+}
